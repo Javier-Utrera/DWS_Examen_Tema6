@@ -1,0 +1,41 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success px-4">
+    <a class="navbar-brand" href="#">
+      <img src="{% static  'imagenes/ba.jpg' %}" 
+          alt="" width="100" height="50" 
+          class="d-inline-block align-text-middle">
+    </a>
+    <button class="navbar-toggler" type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#accionesBiblioteca" 
+      aria-controls="navbarAccionesBiblioteca" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="accionesBiblioteca">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'urls_index' %}">Inicio</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" 
+                id="accionesLibrosLink" 
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+              Clientes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="accionesLibrosLink">
+              <li><a class="dropdown-item" href="{% url 'listar_clientes' %}">Ver Clientes</a></li>
+              <li><a class="dropdown-item" href="{% url 'procesar_cliente' %}">Crear Clientes</a></li>
+              <li><a class="dropdown-item" href="{% url 'buscar_cliente' %}">Buscar Clientes</a></li>
+            </ul>
+        </li>
+
+
+      </ul>
+    </div>
+</nav>
