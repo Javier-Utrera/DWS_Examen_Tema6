@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Detalles de la promocion</h5>
+        <p class="card-text"><strong>ID Promocion:</strong> {{ promocion.id }}</p>
+        <p class="card-text"><strong>Nombre:</strong> {{ promocion.nombre }}</p>
+        <p class="card-text"><strong>Descripcion:</strong> {{ promocion.descripcion }}</p>
+        <p class="card-text"><strong>Producto:</strong> {{ promocion.producto }}</p>
+        <p class="card-text"><strong>Usuarios:</strong> {{ promocion.usuarios  }}</p>
+        <p class="card-text"><strong>Descuento:</strong> {{ promocion.descuento  }}</p>
+        <p class="card-text"><strong>Fecha de iniciop:</strong> {{ promocion.inicio|date:"Y-m-d" }}</p>
+        <p class="card-text"><strong>Fecha de fin:</strong> {{ promocion.fin|date:"Y-m-d" }}</p>
+        <p class="card-text"><strong>Activo:</strong> {{ promocion.activo }}</p>
+        {% load bootstrap_icons %}
+        <div class="row btn-group">
+            <div class="mb-2">
+                <button type="button" 
+                        class="btn btn-outline-primary"> 
+                        <a href="{% url 'editar_promocion' promocion.id %}" >
+                            <span>{% bs_icon 'pencil' %}</span>
+                        </a>
+                </button>
+            </div>
+            <div class="mb-2">
+                <form action = "{% url 'eliminar_promocion' promocion.id %}" method = "post"> 
+                    {% csrf_token %}
+                    <button class="btn btn-danger" onclick="return eliminar();" type="submit">
+                        <span>{% bs_icon 'trash' %}</span>
+                    </button> 
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
