@@ -44,31 +44,34 @@ def buscar_promocion(request):
             mensaje="Se ha buscado los siguientes valores: \n"
             promociones=Promocion.objects.select_related("producto","usuarios")
             
-            nombre=formulario.cleaned_data.get("nombre")
-            descripcion=formulario.cleaned_data.get("descripcion") 
-            inicio=formulario.cleaned_data.get("inicio")
-            fin=formulario.cleaned_data.get("fin")
-            descuento=formulario.cleaned_data.get("descuento")
-            activo=formulario.cleaned_data.get("activo")
+            nombrev=formulario.cleaned_data.get("nombre")
+            descripcionv=formulario.cleaned_data.get("descripcion") 
+            iniciov=formulario.cleaned_data.get("inicio")
+            finv=formulario.cleaned_data.get("fin")
+            descuentov=formulario.cleaned_data.get("descuento")
+            activov=formulario.cleaned_data.get("activo")
             
-            if(nombre!=""):
-                promociones=promociones.filter(nombre=nombre)
-                mensaje+="Nombre que se ha buscado " + nombre  +"\n"
-            if(descripcion!=""):
-                promociones=promociones.filter(descripcion__contains=descripcion)
-                mensaje+="Descripcion por el que se ha buscado " + descripcion + "\n"
-            if(not inicio is None):
-                promociones=promociones.filter(inicio__gte=inicio)
-                mensaje+="La fecha por la que se esta buscando es" + datetime.strftime(inicio,'%d-%m-%Y')+"\n"
-            if(not fin is None):
-                promociones=promociones.filter(fin__gte=fin)
-                mensaje+="La fecha por la que se esta buscando es" + datetime.strftime(fin,'%d-%m-%Y')+"\n"
-            if(not descuento is None):
-                promociones=promociones.filter(descuento__gte=descuento)
-                mensaje+="Descuento por el que se ha buscado " + str(descuento) + "\n"
-            if(activo):
-                promociones=promociones.filter(activo=True)
-                mensaje+="Descripcion por el que se ha buscado " + str(activo) + "\n"                
+            if(nombrev!=""):
+                promociones=promociones.filter(nombre=nombrev)
+                mensaje+="Nombre que se ha buscado " + nombrev  +"\n"
+            if(descripcionv!=""):
+                promociones=promociones.filter(descripcion__contains=descripcionv)
+                mensaje+="Descripcion por el que se ha buscado " + descripcionv + "\n"
+            if(not iniciov is None and not finv is None):
+                promociones=promociones.filter(fin__gt=iniciov,fin__lt=finv)
+                mensaje+="Estamos buscando por dos fechas" + datetime.strftime(iniciov,'%d-%m-%Y')+" hasta "+datetime.strftime(finv,'%d-%m-%Y')+"\n"
+            elif(not iniciov is None):
+                promociones=promociones.filter(fin__gt=iniciov)
+                mensaje+="La fecha desde que se esta buscando es" + datetime.strftime(iniciov,'%d-%m-%Y')+"\n"                
+            elif(not finv is None):
+                promociones=promociones.filter(fin__lt=finv)
+                mensaje+="La fecha hasta la que se esta buscando es" + datetime.strftime(finv,'%d-%m-%Y')+"\n"
+            if(not descuentov is None):
+                promociones=promociones.filter(descuento__gt=descuentov)
+                mensaje+="Descuento por el que se ha buscado " + str(descuentov) + "\n"
+            if(activov):
+                promociones=promociones.filter(activo=activov)
+                mensaje+="Descripcion por el que se ha buscado " + str(activov) + "\n"                
             
             promociones=promociones.all()
             

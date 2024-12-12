@@ -52,9 +52,9 @@ class PromocionForm(ModelForm):
         
         #VALIDAMOS DNI
                
-        promocion=Promocion.objects.filter(nombre=nombre).first()
+        promocion=Promocion.objects.get(nombre=nombre)
         
-        if(promocion):
+        if(not promocion is None):
            self.add_error("nombre","Este nombre ya esta registrado en la base de datos")
            
         if(len(descripcion)<100):
@@ -71,7 +71,7 @@ class PromocionForm(ModelForm):
         if(inicio>fin):
             self.add_error("inicio","La fecha de inicio no puede ser superior a la de finalizacion")
             
-        if(fin<timezone.now().date()):
+        if(fin<date.today()):
             self.add_error("fin","La fecha de finalizacion no puede ser inferior a la actual")
         return self.cleaned_data
             
@@ -101,7 +101,7 @@ class BusquedaAvanzadaPromocion(forms.Form):
         descuento=self.cleaned_data.get("descuento")
         activo=self.cleaned_data.get("activo")
         
-        if(nombre == "" and descripcion =="" and inicio is None and fin is None and descuento is None):
+        if(nombre == "" and descripcion =="" and inicio is None and fin is None and descuento is None and activo is False):
             self.add_error("nombre","Debes rellenar algun dato")
             self.add_error("descripcion","Debes rellenar algun dato")
             self.add_error("inicio","Debes seleccionar una fecha")
@@ -109,10 +109,8 @@ class BusquedaAvanzadaPromocion(forms.Form):
             self.add_error("descuento","Debes rellenar algun dato")
 
         else:
-            if inicio and (inicio>fin):
+            if inicio and (not fin is None) and (inicio>fin):
                 self.add_error("inicio","La fecha de inicio no puede ser superior a la final")
-            if fin and (fin<inicio):
-                self.add_error("fin","La fecha final no puede ser inferior a la inicial")
             if activo==False:
                 self.add_error("activo","Solo puedo buscar promociones activas")   
         return self.cleaned_data        
