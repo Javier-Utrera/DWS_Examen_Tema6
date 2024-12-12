@@ -1,0 +1,548 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add usuario",
+        "content_type": 7,
+        "codename": "add_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change usuario",
+        "content_type": 7,
+        "codename": "change_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete usuario",
+        "content_type": 7,
+        "codename": "delete_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view usuario",
+        "content_type": 7,
+        "codename": "view_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add producto",
+        "content_type": 8,
+        "codename": "add_producto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change producto",
+        "content_type": 8,
+        "codename": "change_producto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete producto",
+        "content_type": 8,
+        "codename": "delete_producto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view producto",
+        "content_type": 8,
+        "codename": "view_producto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add promocion",
+        "content_type": 9,
+        "codename": "add_promocion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change promocion",
+        "content_type": 9,
+        "codename": "change_promocion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete promocion",
+        "content_type": 9,
+        "codename": "delete_promocion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view promocion",
+        "content_type": 9,
+        "codename": "view_promocion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "Examen",
+        "model": "usuario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "Examen",
+        "model": "producto"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "Examen",
+        "model": "promocion"
+    }
+},
+{
+    "model": "Examen.usuario",
+    "pk": 1,
+    "fields": {
+        "nombre": "What somebody far attention teacher. Thus student whose author customer within.",
+        "edad": -17231
+    }
+},
+{
+    "model": "Examen.usuario",
+    "pk": 2,
+    "fields": {
+        "nombre": "Kind play network base himself. Enough effect change leg process market reach boy.",
+        "edad": -16001
+    }
+},
+{
+    "model": "Examen.usuario",
+    "pk": 3,
+    "fields": {
+        "nombre": "Billion say student take yard charge. When nice clearly time world various.",
+        "edad": 30754
+    }
+},
+{
+    "model": "Examen.usuario",
+    "pk": 4,
+    "fields": {
+        "nombre": "Far or source hear arm officer. Research growth wall speak hair care reach.",
+        "edad": 31673
+    }
+},
+{
+    "model": "Examen.usuario",
+    "pk": 5,
+    "fields": {
+        "nombre": "Upon see agree successful.",
+        "edad": -25383
+    }
+},
+{
+    "model": "Examen.producto",
+    "pk": 1,
+    "fields": {
+        "nombre": "Expect strong quite employee too tough police. Budget former food fish.",
+        "puede_tener_promociones": false
+    }
+},
+{
+    "model": "Examen.producto",
+    "pk": 2,
+    "fields": {
+        "nombre": "More several base candidate represent. Reality end rich not evening. Part pressure mother.",
+        "puede_tener_promociones": true
+    }
+},
+{
+    "model": "Examen.producto",
+    "pk": 3,
+    "fields": {
+        "nombre": "Tell town remember because price. Question stop bit your happy take true.",
+        "puede_tener_promociones": true
+    }
+},
+{
+    "model": "Examen.producto",
+    "pk": 4,
+    "fields": {
+        "nombre": "Tell according shoulder couple walk account. Mention door first activity.",
+        "puede_tener_promociones": false
+    }
+},
+{
+    "model": "Examen.producto",
+    "pk": 5,
+    "fields": {
+        "nombre": "Doctor low operation card rule between foot. Sport open deep decide college.",
+        "puede_tener_promociones": true
+    }
+},
+{
+    "model": "Examen.promocion",
+    "pk": 1,
+    "fields": {
+        "nombre": "Land by behind easy begin.",
+        "descripcion": "Project shoulder doctor other today discussion. Since knowledge now writer appear. Fine think notice admit action. Least another exist arm air.",
+        "producto": 1,
+        "usuarios": 4,
+        "descuento": 8484,
+        "inicio": "1998-07-04",
+        "fin": "1993-07-13",
+        "activo": true
+    }
+},
+{
+    "model": "Examen.promocion",
+    "pk": 2,
+    "fields": {
+        "nombre": "Board trade floor newspaper beyond whole letter. Own term section often live sell color.",
+        "descripcion": "Shake research describe ever none tend. Traditional draw simply example increase admit worker.\nPractice less big data. Join yard few quite difficult blue left. Writer best real lose.",
+        "producto": 5,
+        "usuarios": 1,
+        "descuento": 7826,
+        "inicio": "2009-08-20",
+        "fin": "2004-12-15",
+        "activo": false
+    }
+},
+{
+    "model": "Examen.promocion",
+    "pk": 3,
+    "fields": {
+        "nombre": "Network among star surface product final. Their month arm so beautiful.",
+        "descripcion": "Without fight back head current consumer. Final require education huge. Political can both.\nInformation Mr natural them. Represent unit significant dinner.\nDrive score game effect.",
+        "producto": 2,
+        "usuarios": 4,
+        "descuento": 11958,
+        "inicio": "2024-08-05",
+        "fin": "2002-03-23",
+        "activo": false
+    }
+},
+{
+    "model": "Examen.promocion",
+    "pk": 4,
+    "fields": {
+        "nombre": "Age gun blue see miss probably receive. Gun air when ground their research.",
+        "descripcion": "Stay foreign can practice for play. Article may near provide upon audience father. Do management world law because like.",
+        "producto": 1,
+        "usuarios": 3,
+        "descuento": 12029,
+        "inicio": "1994-04-15",
+        "fin": "2002-02-27",
+        "activo": true
+    }
+},
+{
+    "model": "Examen.promocion",
+    "pk": 6,
+    "fields": {
+        "nombre": "Nombre prueba",
+        "descripcion": "erghaerhaerhaerhaerhaerhaerhaerhaerhaerhaerhaerhehaerhaerhaerhaerhearhaerhaerhaerhaerhaerhaerhearhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "producto": 2,
+        "usuarios": 2,
+        "descuento": 7,
+        "inicio": "2023-02-12",
+        "fin": "2026-01-12",
+        "activo": true
+    }
+}
+]
